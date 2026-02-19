@@ -1,0 +1,52 @@
+﻿@model List<emlaksitesi.Models.database.yonetim>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>Admin Bilgilerim</h4>
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+            <div>
+                <a href="/User/Create" class="btn btn-primary">Yeni Kullanıcı Ekle</a>
+
+            </div>
+            <br />
+            <table class="table table-head-bg-success table-striped table-hover">
+                <thead>
+                    <tr>
+                        
+                        <th scope="col">Ad </th>
+                        <th scope="col">Soyad</th>
+                        <th scope="col">Kullanıcı Adınız</th>
+                        <th scope="col">Şifreniz</th>
+                        <th scope="col">İşlem</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ad</td>
+                            <td>@item.soyad</td>
+                            <td>@item.kullanici</td>
+                            <td>@item.sifre</td>
+
+                            <td>
+                                @using (Html.BeginForm("Delete", "User", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="adminID" value="@item.adminID" />
+                                    <button type="submit" onclick="return confirm('Silmek istiyor musunuz?');" class="btn btn-danger">Sil</button>
+                                    <a href="/User/Edit/@item.adminID" class="btn btn-warning">Düzenle</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

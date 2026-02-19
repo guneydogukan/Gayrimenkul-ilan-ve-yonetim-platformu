@@ -1,0 +1,63 @@
+﻿@model List<emlaksitesi.Models.database.detay>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+           
+            <br />
+            <table class="table table-head-bg-success table-striped table-hover"  id="myTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Resim</th>
+                        <th scope="col">Açıklama</th>
+                        <th scope="col">Kişi Detay</th>
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/uploads/images/@item.ev_resim1" style="width: 100px; height: 100px;" />
+                                <img src="~/uploads/images/@item.ev_resim2" style="width: 100px; height: 100px; " />
+                                <img src="~/uploads/images/@item.ev_resim3" style="width: 100px; height: 100px; " />
+                            </td>                           
+                            <td>@item.aciklama</td>
+                            <td>@item.ajans.ad_soyad</td>
+                            
+
+                            <td>
+                                @using (Html.BeginForm("Delete", "Detay", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@item.id" />
+                                    <button type="submit" onclick="return confirm('Silmek istiyor musunuz?');" class="btn btn-danger">Sil</button>
+                                    <a href="/Detay/Edit/@item.id" class="btn btn-warning">Düzenle</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        js('#myTable').DataTable(
+
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            }
+        );
+    });
+</script>
+

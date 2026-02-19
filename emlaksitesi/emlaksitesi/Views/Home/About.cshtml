@@ -1,0 +1,103 @@
+﻿
+@model List<emlaksitesi.Models.database.hakkimizda>
+@{
+    ViewBag.Title = "About";
+}
+
+
+    @foreach(var item in Model)
+     {
+    <div class="hero page-inner overlay"
+         style="background-image: url('/uploads/images/@item.arkaplan_resim')">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 text-center mt-5">
+                    <h1 class="heading" data-aos="fade-up">@item.baslik</h1>
+
+                    <nav aria-label="breadcrumb"
+                         data-aos="fade-up"
+                         data-aos-delay="200">
+                        <ol class="breadcrumb text-center justify-content-center">
+                            <li class="breadcrumb-item"><a href="/Home/Index/">Anasayfa</a></li>
+                            <li class="breadcrumb-item active text-white-50"
+                                aria-current="page">
+                                Hakkımızda
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="row text-left mb-5">
+                <div class="col-12">
+                    <h2 class="font-weight-bold heading text-primary mb-4">@item.baslik</h2>
+                </div>
+                <div class="col-lg-6">
+                    <p class="text-black-50">
+                        @Html.Raw(@item.aciklama)
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="section pt-0">
+        <div class="container">
+            <div class="row justify-content-between mb-5">
+                <div class="col-lg-7 mb-5 mb-lg-0 order-lg-2">
+                    <div class="img-about dots">
+                        <img src="~/uploads/images/@item.resim" alt="Image" class="img-fluid" />
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="icon-home2"></span>
+                        </span>
+                        <div class="feature-text">
+                            <h3 class="heading">@item.alt_baslik1</h3>
+                            <p class="text-black-50">
+                                @item.aciklama1
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="icon-person"></span>
+                        </span>
+                        <div class="feature-text">
+                            <h3 class="heading">@item.alt_baslik2</h3>
+                            <p class="text-black-50">
+                                @item.aciklama2
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex feature-h">
+                        <span class="wrap-icon me-3">
+                            <span class="icon-security"></span>
+                        </span>
+                        <div class="feature-text">
+                            <h3 class="heading">@item.alt_baslik3</h3>
+                            <p class="text-black-50">
+                                @item.aciklama3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    }
+   
+
+    
+

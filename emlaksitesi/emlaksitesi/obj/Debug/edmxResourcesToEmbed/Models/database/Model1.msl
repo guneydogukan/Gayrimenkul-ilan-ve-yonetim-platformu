@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmlakModelStoreContainer" CdmEntityContainer="emlakEntities">
+    <EntitySetMapping Name="ajans">
+      <EntityTypeMapping TypeName="EmlakModel.ajans">
+        <MappingFragment StoreEntitySet="ajans">
+          <ScalarProperty Name="kisi_id" ColumnName="kisi_id" />
+          <ScalarProperty Name="profil_resim" ColumnName="profil_resim" />
+          <ScalarProperty Name="gorev" ColumnName="gorev" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="ad_soyad" ColumnName="ad_soyad" />
+          <ScalarProperty Name="twitter" ColumnName="twitter" />
+          <ScalarProperty Name="facebook" ColumnName="facebook" />
+          <ScalarProperty Name="instagram" ColumnName="instagram" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="anasayfa">
+      <EntityTypeMapping TypeName="EmlakModel.anasayfa">
+        <MappingFragment StoreEntitySet="anasayfa">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="resim1" ColumnName="resim1" />
+          <ScalarProperty Name="resim2" ColumnName="resim2" />
+          <ScalarProperty Name="resim3" ColumnName="resim3" />
+          <ScalarProperty Name="resim4" ColumnName="resim4" />
+          <ScalarProperty Name="resim5" ColumnName="resim5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bize_ulasin">
+      <EntityTypeMapping TypeName="EmlakModel.bize_ulasin">
+        <MappingFragment StoreEntitySet="bize_ulasin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="arkaplan_resim" ColumnName="arkaplan_resim" />
+          <ScalarProperty Name="konum_baslik" ColumnName="konum_baslik" />
+          <ScalarProperty Name="konum_aciklama" ColumnName="konum_aciklama" />
+          <ScalarProperty Name="saatBaslik" ColumnName="saatBaslik" />
+          <ScalarProperty Name="hizmet_saatleri" ColumnName="hizmet_saatleri" />
+          <ScalarProperty Name="email_baslik" ColumnName="email_baslik" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="telefon_baslik" ColumnName="telefon_baslik" />
+          <ScalarProperty Name="telefon_numarasi" ColumnName="telefon_numarasi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="detay">
+      <EntityTypeMapping TypeName="EmlakModel.detay">
+        <MappingFragment StoreEntitySet="detay">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ev_resim1" ColumnName="ev_resim1" />
+          <ScalarProperty Name="ev_resim2" ColumnName="ev_resim2" />
+          <ScalarProperty Name="ev_resim3" ColumnName="ev_resim3" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="kisidetay" ColumnName="kisidetay" />
+          <ScalarProperty Name="ev_id" ColumnName="ev_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hakkimizda">
+      <EntityTypeMapping TypeName="EmlakModel.hakkimizda">
+        <MappingFragment StoreEntitySet="hakkimizda">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="aciklama" ColumnName="aciklama" />
+          <ScalarProperty Name="arkaplan_resim" ColumnName="arkaplan_resim" />
+          <ScalarProperty Name="alt_baslik1" ColumnName="alt_baslik1" />
+          <ScalarProperty Name="aciklama1" ColumnName="aciklama1" />
+          <ScalarProperty Name="alt_baslik2" ColumnName="alt_baslik2" />
+          <ScalarProperty Name="aciklama2" ColumnName="aciklama2" />
+          <ScalarProperty Name="alt_baslik3" ColumnName="alt_baslik3" />
+          <ScalarProperty Name="aciklama3" ColumnName="aciklama3" />
+          <ScalarProperty Name="resim" ColumnName="resim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mesaj">
+      <EntityTypeMapping TypeName="EmlakModel.mesaj">
+        <MappingFragment StoreEntitySet="mesaj">
+          <ScalarProperty Name="mesaj_id" ColumnName="mesaj_id" />
+          <ScalarProperty Name="isim" ColumnName="isim" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="konu" ColumnName="konu" />
+          <ScalarProperty Name="mesaj1" ColumnName="mesaj" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="slider">
+      <EntityTypeMapping TypeName="EmlakModel.slider">
+        <MappingFragment StoreEntitySet="slider">
+          <ScalarProperty Name="slider_id" ColumnName="slider_id" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="resim" ColumnName="resim" />
+          <ScalarProperty Name="fiyat" ColumnName="fiyat" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+          <ScalarProperty Name="yatak_sayisi" ColumnName="yatak_sayisi" />
+          <ScalarProperty Name="banyo_sayisi" ColumnName="banyo_sayisi" />
+          <ScalarProperty Name="durum" ColumnName="durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="EmlakModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yonetim">
+      <EntityTypeMapping TypeName="EmlakModel.yonetim">
+        <MappingFragment StoreEntitySet="yonetim">
+          <ScalarProperty Name="adminID" ColumnName="adminID" />
+          <ScalarProperty Name="ad" ColumnName="ad" />
+          <ScalarProperty Name="soyad" ColumnName="soyad" />
+          <ScalarProperty Name="kullanici" ColumnName="kullanici" />
+          <ScalarProperty Name="sifre" ColumnName="sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="footer">
+      <EntityTypeMapping TypeName="EmlakModel.footer">
+        <MappingFragment StoreEntitySet="footer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="telefon_numarasi" ColumnName="telefon_numarasi" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="instagram" ColumnName="instagram" />
+          <ScalarProperty Name="twitter" ColumnName="twitter" />
+          <ScalarProperty Name="facebook" ColumnName="facebook" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

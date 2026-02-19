@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmlakModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ajans">
+    <Key>
+      <PropertyRef Name="kisi_id" />
+    </Key>
+    <Property Name="kisi_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="profil_resim" Type="nvarchar" MaxLength="300" />
+    <Property Name="gorev" Type="nvarchar" MaxLength="100" />
+    <Property Name="aciklama" Type="nvarchar" MaxLength="300" />
+    <Property Name="ad_soyad" Type="nvarchar" MaxLength="220" />
+    <Property Name="twitter" Type="nvarchar(max)" />
+    <Property Name="facebook" Type="nvarchar(max)" />
+    <Property Name="instagram" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="anasayfa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="baslik" Type="nvarchar" MaxLength="100" />
+    <Property Name="resim1" Type="nvarchar" MaxLength="300" />
+    <Property Name="resim2" Type="nvarchar" MaxLength="300" />
+    <Property Name="resim3" Type="nvarchar" MaxLength="300" />
+    <Property Name="resim4" Type="nvarchar" MaxLength="300" />
+    <Property Name="resim5" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="bize_ulasin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="arkaplan_resim" Type="nvarchar" MaxLength="300" />
+    <Property Name="konum_baslik" Type="nvarchar" MaxLength="30" />
+    <Property Name="konum_aciklama" Type="nvarchar(max)" />
+    <Property Name="saatBaslik" Type="nvarchar" MaxLength="30" />
+    <Property Name="hizmet_saatleri" Type="nvarchar(max)" />
+    <Property Name="email_baslik" Type="nvarchar(max)" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="telefon_baslik" Type="nvarchar" MaxLength="30" />
+    <Property Name="telefon_numarasi" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ev_resim1" Type="nvarchar" MaxLength="300" />
+    <Property Name="ev_resim2" Type="nvarchar" MaxLength="300" />
+    <Property Name="ev_resim3" Type="nvarchar" MaxLength="300" />
+    <Property Name="aciklama" Type="nvarchar(max)" />
+    <Property Name="kisidetay" Type="int" />
+    <Property Name="ev_id" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Emlak.dbo.footer' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="footer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="baslik" Type="nvarchar" MaxLength="40" />
+    <Property Name="adres" Type="nvarchar(max)" />
+    <Property Name="telefon_numarasi" Type="bigint" />
+    <Property Name="email" Type="nvarchar(max)" />
+    <Property Name="instagram" Type="nvarchar(max)" />
+    <Property Name="twitter" Type="nvarchar(max)" />
+    <Property Name="facebook" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="hakkimizda">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="baslik" Type="nvarchar" MaxLength="100" />
+    <Property Name="aciklama" Type="nvarchar(max)" />
+    <Property Name="arkaplan_resim" Type="nvarchar" MaxLength="300" />
+    <Property Name="alt_baslik1" Type="nvarchar" MaxLength="100" />
+    <Property Name="aciklama1" Type="nvarchar(max)" />
+    <Property Name="alt_baslik2" Type="nvarchar" MaxLength="100" />
+    <Property Name="aciklama2" Type="nvarchar(max)" />
+    <Property Name="alt_baslik3" Type="nvarchar" MaxLength="100" />
+    <Property Name="aciklama3" Type="nvarchar(max)" />
+    <Property Name="resim" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="mesaj">
+    <Key>
+      <PropertyRef Name="mesaj_id" />
+    </Key>
+    <Property Name="mesaj_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="isim" Type="nvarchar" MaxLength="100" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="konu" Type="nvarchar" MaxLength="100" />
+    <Property Name="mesaj" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="slider">
+    <Key>
+      <PropertyRef Name="slider_id" />
+    </Key>
+    <Property Name="slider_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="baslik" Type="nvarchar" MaxLength="200" />
+    <Property Name="resim" Type="nvarchar" MaxLength="300" />
+    <Property Name="fiyat" Type="int" />
+    <Property Name="adres" Type="nvarchar" MaxLength="500" />
+    <Property Name="ilce" Type="nvarchar" MaxLength="50" />
+    <Property Name="sehir" Type="nvarchar" MaxLength="50" />
+    <Property Name="yatak_sayisi" Type="int" />
+    <Property Name="banyo_sayisi" Type="int" />
+    <Property Name="durum" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="yonetim">
+    <Key>
+      <PropertyRef Name="adminID" />
+    </Key>
+    <Property Name="adminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="kullanici" Type="nvarchar" MaxLength="50" />
+    <Property Name="sifre" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_detay_ajans">
+    <End Role="ajans" Type="Self.ajans" Multiplicity="0..1" />
+    <End Role="detay" Type="Self.detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ajans">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="detay">
+        <PropertyRef Name="kisidetay" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detay_slider">
+    <End Role="slider" Type="Self.slider" Multiplicity="0..1" />
+    <End Role="detay" Type="Self.detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="slider">
+        <PropertyRef Name="slider_id" />
+      </Principal>
+      <Dependent Role="detay">
+        <PropertyRef Name="ev_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="EmlakModelStoreContainer">
+    <EntitySet Name="ajans" EntityType="Self.ajans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="anasayfa" EntityType="Self.anasayfa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="bize_ulasin" EntityType="Self.bize_ulasin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="detay" EntityType="Self.detay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hakkimizda" EntityType="Self.hakkimizda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="mesaj" EntityType="Self.mesaj" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="slider" EntityType="Self.slider" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yonetim" EntityType="Self.yonetim" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="footer" EntityType="Self.footer" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [footer].[id] AS [id], 
+    [footer].[baslik] AS [baslik], 
+    [footer].[adres] AS [adres], 
+    [footer].[telefon_numarasi] AS [telefon_numarasi], 
+    [footer].[email] AS [email], 
+    [footer].[instagram] AS [instagram], 
+    [footer].[twitter] AS [twitter], 
+    [footer].[facebook] AS [facebook]
+    FROM [dbo].[footer] AS [footer]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_detay_ajans" Association="Self.FK_detay_ajans">
+      <End Role="ajans" EntitySet="ajans" />
+      <End Role="detay" EntitySet="detay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detay_slider" Association="Self.FK_detay_slider">
+      <End Role="slider" EntitySet="slider" />
+      <End Role="detay" EntitySet="detay" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

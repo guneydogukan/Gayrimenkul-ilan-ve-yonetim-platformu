@@ -1,0 +1,54 @@
+﻿@model List<emlaksitesi.Models.database.hakkimizda>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4>Hakkımızda</h4>
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+
+            <br />
+            <table class="table table-head-bg-success table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Arkaplan Resmi</th>
+                        <th scope="col">Açıklama</th>
+                        <th scope="col">Açıklama1</th>
+                        <th scope="col">Açıklama2</th>
+                        <th scope="col">Açıklama3</th>
+                        <th scope="col">Resim</th>
+                        <th scope="col">İşlem</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/uploads/images/@item.arkaplan_resim" style="width:80px;height:80px;" />
+                            </td>
+                            <td>@Html.Raw(@item.aciklama)</td>
+                            <td>@item.aciklama1</td>
+                            <td>@item.aciklama2</td>
+                            <td>@item.aciklama3</td>
+                            <td>
+                                <img src="~/uploads/images/@item.resim" style="width:80px;height:80px;" />
+                            </td>
+                            <td>
+
+                                <a href="/About/Edit/@item.id" class="btn btn-warning">Düzenle</a>
+
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

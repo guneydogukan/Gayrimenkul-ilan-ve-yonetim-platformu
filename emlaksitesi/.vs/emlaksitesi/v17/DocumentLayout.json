@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|c:\\users\\asus\\masa\u00FCst\u00FC\\dogukan_guney_proje\\dogukan_guney_proje\\emlaksitesi\\emlaksitesi\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-19T11:57:29.305Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

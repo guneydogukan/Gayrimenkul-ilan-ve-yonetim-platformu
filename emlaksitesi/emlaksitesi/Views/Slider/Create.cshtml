@@ -1,0 +1,118 @@
+﻿@model emlaksitesi.Models.database.slider
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("Create", "Slider", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title">Emlak Ekle</div>
+            <div class="card-category"></div>
+        </div>
+        <div class="card-body">
+            <div class="form">
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Resim :</label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <input type="file" name="resim" class="form-control " accept="image/*" />
+
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Başlık :</label>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        @Html.TextBoxFor(model => model.baslik, new { @class = "form-control" })
+
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Şehir :</label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        @Html.TextBoxFor(model => model.sehir, new { @class = "form-control" })
+
+                    </div>
+                </div>
+
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>İlçe : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextBoxFor(model => model.ilce, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Adres : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextAreaFor(model => model.adres, new { @class = "form-control", @rows = "2" })
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Fiyat : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextBoxFor(model => model.fiyat, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Yatak Sayısı : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextBoxFor(model => model.yatak_sayisi, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Banyo Sayısı : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextBoxFor(model => model.banyo_sayisi, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Durum : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextBoxFor(model => model.durum, new { @class = "form-control" })
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="form">
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <button id="displayNotif" class="btn btn-success">Kaydet</button>
+                        <a href="/Slider/Index" class="btn btn-primary">Geri Dön</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

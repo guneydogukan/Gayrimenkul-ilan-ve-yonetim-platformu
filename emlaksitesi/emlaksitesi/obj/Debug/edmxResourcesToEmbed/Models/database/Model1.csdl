@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmlakModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ajans">
+    <Key>
+      <PropertyRef Name="kisi_id" />
+    </Key>
+    <Property Name="kisi_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="profil_resim" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="gorev" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ad_soyad" Type="String" MaxLength="220" FixedLength="false" Unicode="true" />
+    <Property Name="twitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="facebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="instagram" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="detay" Relationship="Self.FK_detay_ajans" FromRole="ajans" ToRole="detay" />
+  </EntityType>
+  <EntityType Name="anasayfa">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="resim1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="resim2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="resim3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="resim4" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="resim5" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="bize_ulasin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="arkaplan_resim" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="konum_baslik" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="konum_aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="saatBaslik" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="hizmet_saatleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email_baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="telefon_baslik" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="telefon_numarasi" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ev_resim1" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ev_resim2" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="ev_resim3" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="kisidetay" Type="Int32" />
+    <Property Name="ev_id" Type="Int32" />
+    <NavigationProperty Name="ajans" Relationship="Self.FK_detay_ajans" FromRole="detay" ToRole="ajans" />
+    <NavigationProperty Name="slider" Relationship="Self.FK_detay_slider" FromRole="detay" ToRole="slider" />
+  </EntityType>
+  <EntityType Name="hakkimizda">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="arkaplan_resim" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="alt_baslik1" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="alt_baslik2" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="alt_baslik3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="aciklama3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="resim" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="mesaj">
+    <Key>
+      <PropertyRef Name="mesaj_id" />
+    </Key>
+    <Property Name="mesaj_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="isim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="konu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="mesaj1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="slider">
+    <Key>
+      <PropertyRef Name="slider_id" />
+    </Key>
+    <Property Name="slider_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="resim" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="fiyat" Type="Int32" />
+    <Property Name="adres" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ilce" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sehir" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="yatak_sayisi" Type="Int32" />
+    <Property Name="banyo_sayisi" Type="Int32" />
+    <Property Name="durum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="detay" Relationship="Self.FK_detay_slider" FromRole="slider" ToRole="detay" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="yonetim">
+    <Key>
+      <PropertyRef Name="adminID" />
+    </Key>
+    <Property Name="adminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="footer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="baslik" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="adres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="telefon_numarasi" Type="Int64" />
+    <Property Name="email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="instagram" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="twitter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="facebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_detay_ajans">
+    <End Role="ajans" Type="Self.ajans" Multiplicity="0..1" />
+    <End Role="detay" Type="Self.detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ajans">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="detay">
+        <PropertyRef Name="kisidetay" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_detay_slider">
+    <End Role="slider" Type="Self.slider" Multiplicity="0..1" />
+    <End Role="detay" Type="Self.detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="slider">
+        <PropertyRef Name="slider_id" />
+      </Principal>
+      <Dependent Role="detay">
+        <PropertyRef Name="ev_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="emlakEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ajans" EntityType="Self.ajans" />
+    <EntitySet Name="anasayfa" EntityType="Self.anasayfa" />
+    <EntitySet Name="bize_ulasin" EntityType="Self.bize_ulasin" />
+    <EntitySet Name="detay" EntityType="Self.detay" />
+    <EntitySet Name="hakkimizda" EntityType="Self.hakkimizda" />
+    <EntitySet Name="mesaj" EntityType="Self.mesaj" />
+    <EntitySet Name="slider" EntityType="Self.slider" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="yonetim" EntityType="Self.yonetim" />
+    <EntitySet Name="footer" EntityType="Self.footer" />
+    <AssociationSet Name="FK_detay_ajans" Association="Self.FK_detay_ajans">
+      <End Role="ajans" EntitySet="ajans" />
+      <End Role="detay" EntitySet="detay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_detay_slider" Association="Self.FK_detay_slider">
+      <End Role="slider" EntitySet="slider" />
+      <End Role="detay" EntitySet="detay" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

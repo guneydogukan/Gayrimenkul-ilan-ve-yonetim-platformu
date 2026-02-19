@@ -1,0 +1,184 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@using emlaksitesi.Models.database
+@model IPagedList<emlaksitesi.Models.database.slider>
+@{
+    ViewBag.Title = "Properties";
+}
+
+
+<div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+            <span class="icofont-close js-menu-toggle"></span>
+        </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+</div>
+
+
+
+<div class="hero page-inner overlay"
+     style="background-image: url('/property-1.0.0/images/hero_bg_1.jpg') ">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-9 text-center mt-5">
+                <h1 class="heading" data-aos="fade-up">Emlaklar</h1>
+
+                <nav aria-label="breadcrumb"
+                     data-aos="fade-up"
+                     data-aos-delay="200">
+                    <ol class="breadcrumb text-center justify-content-center">
+                        <li class="breadcrumb-item"><a href="/Home/Index/">Anasayfa</a></li>
+                        <li class="breadcrumb-item active text-white-50"
+                            aria-current="page">
+                            Emlak
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="section">
+    <div class="container">
+        <div class="row mb-5 align-items-center">
+            <div class="col-lg-6 text-center mx-auto">
+                <h2 class="font-weight-bold text-primary heading">
+
+                    Öne Çıkan Emlaklar
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-12">
+                <div class="property-slider-wrap">
+                    <div class="property-slider">
+                        @foreach (var item in ViewBag.P_Slider)
+                        {
+                            <div class="property-item">
+                                <a href="Home/Properties" class="img">
+                                    <img src="~/uploads/images/@item.resim" alt="Image" class="img-fluid" />
+                                </a>
+
+
+
+                                <div class="property-content">
+                                    <div class="price mb-2"><span>@item.fiyat ₺</span></div>
+                                    <div>
+                                        <span class="d-block mb-2 text-black-50">@item.adres</span>
+                                        <span class="city d-block mb-3">@item.sehir, @item.ilce</span>
+
+                                        <div class="specs d-flex mb-4">
+                                            <div class="specs d-flex flex-wrap mb-4">
+                                                <span class="d-block d-flex align-items-center me-3">
+                                                    <span class="icon-bed me-2"></span>
+                                                    <span class="caption">@item.yatak_sayisi Yatak</span>
+                                                </span>
+                                                <span class="d-block d-flex align-items-center me-3">
+                                                    <span class="icon-bath me-2"></span>
+                                                    <span class="caption">@item.banyo_sayisi Banyo</span>
+                                                </span>
+                                                <span class="d-block d-flex align-items-center">
+                                                    <span class="icon-home me-2"></span>
+                                                    <span class="caption">@item.durum</span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                        @foreach (var detay in item.detay)
+                                        {
+                                            <a href="~/Home/Detay/@detay.ev_id"
+                                               class="btn btn-primary py-2 px-3">Detay</a>
+                                        }
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+                    </div>
+
+                    <div id="property-nav"
+                         class="controls"
+                         tabindex="0"
+                         aria-label="Carousel Navigation">
+                        <span class="prev"
+                              data-controls="prev"
+                              aria-controls="property"
+                              tabindex="-1">Önceki</span>
+                        <span class="next"
+                              data-controls="next"
+                              aria-controls="property"
+                              tabindex="-1">Sonraki</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+<div class="section section-properties" id="emlak">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="property-item mb-30">
+                        <a href="property-single.html" class="img">
+                            <img src="~/uploads/images/@item.resim" alt="Image" class="img-fluid" />
+                        </a>
+
+                        <div class="property-content">
+                            <div class="price mb-2"><span>@item.fiyat ₺</span></div>
+                            <div>
+                                <span class="d-block mb-2 text-black-50">@item.adres</span>
+                                <span class="city d-block mb-3">@item.sehir, @item.ilce</span>
+
+                                <div class="specs d-flex mb-4">
+                                    <span class="d-block d-flex align-items-center me-3">
+                                        <span class="icon-bed me-2"></span>
+                                        <span class="caption">@item.yatak_sayisi Yatak</span>
+                                    </span>
+                                    <span class="d-block d-flex align-items-center me-3">
+                                        <span class="icon-bath me-2"></span>
+                                        <span class="caption">@item.banyo_sayisi Banyo</span>
+                                    </span>
+                                    <span class="d-block d-flex align-items-center">
+                                        <span class="icon-home me-2"></span>
+                                        <span class="caption">@item.durum</span>
+                                    </span>
+                                </div>
+
+                                @foreach (var detay in item.detay)
+                                {
+                                    <a href="~/Home/Detay/@detay.ev_id" class="btn btn-primary py-2 px-3">Detay</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <!-- Pagination Links -->
+            <div class="col-12 mt-4">
+                @Html.PagedListPager(
+                    Model,
+                    pageNumber => Url.Action("Properties", "Home", new { SayfaNo = pageNumber }) + "#emlak"
+                )
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+

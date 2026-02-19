@@ -1,0 +1,60 @@
+﻿@model List<emlaksitesi.Models.database.mesaj>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<h4>Mesajlar 💌</h4>
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+
+            <br />
+            <table class="table table-head-bg-success table-striped table-hover" id="myTable">
+                <thead>
+                    <tr>
+                        <th scope="col">İsim</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Konu</th>
+                        
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            
+                            <td>@item.isim</td>
+                            <td>@item.email</td>
+                            <td>@item.konu</td>
+                            
+                            <td>
+
+                                <a href="/Messages/Read/@item.mesaj_id" class="btn btn-warning">Oku</a>
+
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        js('#myTable').DataTable(
+
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            }
+        );
+    });
+</script>

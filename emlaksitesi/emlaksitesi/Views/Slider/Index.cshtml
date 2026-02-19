@@ -1,0 +1,78 @@
+﻿@model List<emlaksitesi.Models.database.slider>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>Emlak</h4>
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+            <div>
+                <a href="/Slider/Create" class="btn btn-primary">Yeni Ekle</a>
+
+            </div>
+            <br />
+            <table id="myTable" class="table table-head-bg-success table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Resim</th>
+                        <th scope="col">Başlık</th>
+                        <th scope="col">Şehir</th>
+                        <th scope="col">İlçe</th>
+                        <th scope="col">Adres</th>
+                        <th scope="col">Fiyat</th>
+                        <th scope="col">Yatak Sayısı</th>
+                        <th scope="col">Banyo Sayısı</th>
+                        <th scope="col">Durum</th>
+                        <th scope="col">İşlem</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                <img src="~/uploads/images/@item.resim" style="width: 100px; height: 100px;" />
+                            </td>
+                            <td>@item.baslik</td>
+                            <td>@item.sehir</td>
+                            <td>@item.ilce</td>
+                            <td>@item.adres</td>
+                            <td>@item.fiyat</td>
+                            <td>@item.yatak_sayisi</td>
+                            <td>@item.banyo_sayisi</td>
+                            <td>@item.durum</td>
+
+                            <td>
+                                @using (Html.BeginForm("Delete", "Slider", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="id" value="@item.slider_id" />
+                                    <button type="submit" onclick="return confirm('Silmek istiyor musunuz?');" class="btn btn-danger">Sil</button>
+                                    <a href="/Slider/Edit/@item.slider_id" class="btn btn-warning">Düzenle</a>
+                                    <a href="/Detay/Create/@item.slider_id" class="btn btn-secondary">Detay Ekle</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        js('#myTable').DataTable(
+
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            }
+        );
+    });
+</script>
+

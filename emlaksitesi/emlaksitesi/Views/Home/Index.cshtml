@@ -1,0 +1,182 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    @foreach(var item in ViewBag.Anasayfa)
+    {
+    <div class="hero">
+        <div class="hero-slide">
+            <div class="img overlay"
+                 style="background-image: url('/uploads/images/@item.resim1')"></div>
+            <div class="img overlay"
+                 style="background-image: url('/uploads/images/@item.resim2')"></div>
+            <div class="img overlay"
+                 style="background-image: url('/uploads/images/@item.resim3')"></div>
+            <div class="img overlay"
+                 style="background-image: url('/uploads/images/@item.resim4')"></div>
+            <div class="img overlay"
+                 style="background-image: url('/uploads/images/@item.resim5')"></div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-9 text-center">
+                    <h1 class="heading" data-aos="fade-up">
+                        @item.baslik
+                    </h1>
+                    @*<form action="#"
+                          class="narrow-w form-search d-flex align-items-stretch mb-3"
+                          data-aos="fade-up"
+                          data-aos-delay="200">
+                        <input type="text"
+                               class="form-control px-4"
+                               placeholder="Şehir,İlçe,Satılık,Kiralik" />
+                        <button type="submit" class="btn btn-primary">Arama</button>
+                    </form>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+    <div class="section">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="font-weight-bold text-primary heading">
+                        Popüler Gayrimenkuller
+                    </h2>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p>
+                        <a href="/Home/Properties"
+                           
+                           class="btn btn-primary text-white py-3 px-4">Hepsini Görüntüle</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="property-slider-wrap">
+                        <div class="property-slider">
+                            @foreach (var item in ViewBag.Slider)
+                            {
+                                <div class="property-item">
+                                    <a href="Home/Properties" class="img">
+                                        <img src="~/uploads/images/@item.resim" alt="Image" class="img-fluid" />
+                                    </a>
+
+
+
+                                    <div class="property-content">
+                                        <div class="price mb-2"><span>@item.fiyat ₺</span></div>
+                                        <div>
+
+                                            <span class="d-block mb-2 text-black-50">@item.adres</span>
+                                            <span class="city d-block mb-3">@item.sehir, @item.ilce</span>
+
+                                            <div class="specs d-flex mb-4">
+                                                <div class="specs d-flex flex-wrap mb-4">
+                                                    <span class="d-block d-flex align-items-center me-3">
+                                                        <span class="icon-bed me-2"></span>
+                                                        <span class="caption">@item.yatak_sayisi Yatak</span>
+                                                    </span>
+                                                    <span class="d-block d-flex align-items-center me-3">
+                                                        <span class="icon-bath me-2"></span>
+                                                        <span class="caption">@item.banyo_sayisi Banyo</span>
+                                                    </span>
+                                                    <span class="d-block d-flex align-items-center">
+                                                        <span class="icon-home me-2"></span>
+                                                        <span class="caption">@item.durum</span>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+                                            @foreach (var detay in item.detay)
+                                            {
+                                                <a href="/Home/Detay/@detay.ev_id"
+                                                   class="btn btn-primary py-2 px-3">Detay</a>
+                                            }
+                                            </div>
+                                    </div>
+                                   
+                                </div>
+                                <!-- .item -->
+
+                            }
+                            </div>
+
+                        <div id="property-nav"
+                             class="controls"
+                             tabindex="0"
+                             aria-label="Carousel Navigation">
+                            <span class="prev"
+                                  data-controls="prev"
+                                  aria-controls="property"
+                                  tabindex="-1">Önceki</span>
+                            <span class="next"
+                                  data-controls="next"
+                                  aria-controls="property"
+                                  tabindex="-1">Sonraki</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+ 
+    <div class="section section-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6 mb-5">
+                    <h2 class="font-weight-bold heading text-primary mb-4">
+                        Ajanslarımız
+                    </h2>
+                    <p class="text-black-50">
+                        Ajanslarımız, gayrimenkul sektöründe uzmanlaşmış deneyimli ekipleriyle müşterilerimize en iyi hizmeti sunmayı hedeflemektedir. Bölgesel pazar bilgisi, güçlü iletişim ağı ve profesyonel yaklaşımıyla ajanslarımız, ihtiyaçlarınıza uygun emlak çözümlerini hızlı ve güvenilir bir şekilde sunar. Evinizi satmak, kiralamak ya da hayalinizdeki mülkü bulmak için ajanslarımız her zaman yanınızda!
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                @foreach (var item in ViewBag.Ajans)
+                {
+
+
+                    <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="h-100 person">
+                            <img src="~/uploads/images/@item.profil_resim"
+                                 alt="Image"
+                                 class="img-fluid" />
+
+                            <div class="person-contents">
+                                <h2 class="mb-0"><a href="#">@item.ad_soyad</a></h2>
+                                <span class="meta d-block mb-3">@item.gorev</span>
+                                <p>
+                                    @item.aciklama
+                                </p>
+
+                                <ul class="social list-unstyled list-inline dark-hover">
+                                    <li class="list-inline-item">
+                                        <a href="@item.twitter"><span class="icon-twitter"></span></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="@item.facebook"><span class="icon-facebook"></span></a>
+                                    </li>
+
+                                    <li class="list-inline-item">
+                                        <a href="@item.instagram"><span class="icon-instagram"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                 }
+            </div>
+          
+        </div>
+    </div>
+    
+

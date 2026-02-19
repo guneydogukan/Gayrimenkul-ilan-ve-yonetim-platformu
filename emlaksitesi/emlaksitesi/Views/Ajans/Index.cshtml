@@ -1,0 +1,73 @@
+﻿@model List<emlaksitesi.Models.database.ajans>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<h4>Ajans</h4>
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+            <div>
+                <a href="/Ajans/Create" class="btn btn-primary">Yeni Ekle</a>
+
+            </div>
+            <br />
+            <table class="table table-head-bg-success table-striped table-hover"  id="myTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Profil Resim</th>
+                        <th scope="col">Ad Soyad</th>
+                        <th scope="col">Görev</th>
+                        <th scope="col">Açıklama</th>
+                        <th scope="col">Twitter</th>
+                        <th scope="col">Facebook</th>
+                        <th scope="col">İnstagram</th>
+                        <th scope="col">İşlem</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                             <img src="~/uploads/images/@item.profil_resim" style="width:100px;height:100px;" />
+                            </td>
+                            <td>@item.ad_soyad</td>
+                            <td>@item.gorev</td>
+                            <td>@item.aciklama</td>
+                            <td>@item.twitter</td>
+                            <td>@item.facebook</td>
+                            <td>@item.instagram</td>
+
+                            <td>
+                                @using (Html.BeginForm("Delete", "Ajans", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="kisi_id" value="@item.kisi_id" />
+                                    <button type="submit" onclick="return confirm('Silmek istiyor musunuz?');" class="btn btn-danger">Sil</button>
+                                    <a href="/Ajans/Edit/@item.kisi_id" class="btn btn-warning">Düzenle</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var js = jQuery.noConflict(true);
+    js(document).ready(function () {
+        js('#myTable').DataTable(
+
+            {
+                "language": {
+                    "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Turkish.json"
+                }
+            }
+        );
+    });
+</script>

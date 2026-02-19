@@ -1,0 +1,78 @@
+﻿@model emlaksitesi.Models.database.mesaj
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("Read", "Messages", FormMethod.Get))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.mesaj_id)
+
+    <h2>Mesaj Detay</h2>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-title"></div>
+            <div class="card-category"></div>
+        </div>
+        <div class="card-body">
+            <div class="form">
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>İsim :</label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        @Html.TextBoxFor(model =>model.isim, new { @class = "form-control", @readonly = "readonly" })
+
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Email :</label>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        @Html.TextBoxFor(model => model.email, new { @class = "form-control", @readonly = "readonly" })
+
+                    </div>
+                </div>
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Konu :</label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        @Html.TextBoxFor(model => model.konu, new { @class = "form-control", @readonly = "readonly" })
+
+                    </div>
+                </div>
+
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-right">
+                        <label>Mesaj : </label>
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+
+                        @Html.TextAreaFor(model => model.mesaj1, new { @class = "form-control",@readonly="readonly"})
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="form">
+                <div class="form-group from-show-notify row">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+
+                    </div>
+                    <div class="col-lg-6 col-md-9 col-sm-12">
+                        <a href="/Messages/Index" class="btn btn-primary">Geri Dön</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+

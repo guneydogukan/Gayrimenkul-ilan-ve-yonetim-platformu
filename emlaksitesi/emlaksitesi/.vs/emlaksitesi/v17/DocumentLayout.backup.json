@@ -1,0 +1,312 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|c:\\users\\asus\\masa\u00FCst\u00FC\\dogukan_guney_proje\\dogukan_guney_proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\home\\properties.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\home\\properties.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\yonetim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\yonetim\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\yonetim\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\yonetim\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\home\\mesaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\home\\mesaj.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\about\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\about\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\messages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\messages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{79D6C472-24A6-4D30-97BE-47464BC01AFA}|emlaksitesi\\emlaksitesi.csproj|solutionrelative:emlaksitesi\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T22:00:56.666Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Mesaj.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Mesaj.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Home\\Mesaj.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Mesaj.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Home\\Mesaj.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T22:07:30.265Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Web.config",
+              "RelativeDocumentMoniker": "emlaksitesi\\Web.config",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Web.config",
+              "RelativeToolTip": "emlaksitesi\\Web.config",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEEAAAARAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-11T15:03:28.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Yonetim\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Yonetim\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Yonetim\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Yonetim\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T14:55:17.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\User\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T08:50:30.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T22:00:50.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T21:55:22.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Properties.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Properties.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Home\\Properties.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\Properties.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Home\\Properties.cshtml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwH4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T21:24:53.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAACEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:42:10.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Yonetim\\login.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Yonetim\\login.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Yonetim\\login.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Yonetim\\login.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T14:55:23.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "emlaksitesi\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "emlaksitesi\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T21:22:08.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:50:01.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "emlaksitesi\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "emlaksitesi\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-28T20:47:48.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\About\\Edit.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\About\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\About\\Edit.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\About\\Edit.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:46:40.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:46:32.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Messages\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Messages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Messages\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Messages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:43:37.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:40:43.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "emlaksitesi\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\Masa\u00FCst\u00FC\\dogukan_guney_Proje\\dogukan_guney_Proje\\emlaksitesi\\emlaksitesi\\emlaksitesi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "emlaksitesi\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBQAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-28T20:37:02.686Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

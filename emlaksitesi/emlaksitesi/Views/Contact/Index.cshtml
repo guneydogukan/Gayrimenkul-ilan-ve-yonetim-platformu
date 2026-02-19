@@ -1,0 +1,48 @@
+﻿@model List<emlaksitesi.Models.database.bize_ulasin>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h4>Bize Ulaşın</h4>
+<div class="card">
+    <div class="card-header ">
+        <div class="card-body">
+            
+            <br />
+            <table class="table table-head-bg-success table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Arkaplan Resmi</th>
+                        <th scope="col">Konum Açıklama</th>
+                        <th scope="col">Hizmet Saatleri</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Telefon Numarası</th>
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>
+                            <img src="~/uploads/images/@item.arkaplan_resim" style="width:100px;height:100px;" />
+                        </td>
+                        <td>@item.konum_aciklama</td>
+                        <td>@item.hizmet_saatleri</td>
+                        <td>@item.email</td>
+                        <td>@item.telefon_numarasi</td>
+                        <td>
+                           
+                                <a href="/Contact/Edit/@item.id" class="btn btn-warning">Düzenle</a>
+                            
+                        </td>
+                    </tr>
+                    }
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
