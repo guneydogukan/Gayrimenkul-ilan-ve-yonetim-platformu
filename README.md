@@ -57,7 +57,7 @@ Emlak Sitesi, **ASP.NET MVC 5** ile geliştirilmiş, gayrimenkul ilanlarını li
 ### 1. Projeyi Klonlayın
 
 ```bash
-git clone https://github.com/<KULLANICI_ADI>/emlaksitesi.git
+git clone https://github.com/guneydogukan/emlaksitesi.git
 cd emlaksitesi
 ```
 
